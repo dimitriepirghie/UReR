@@ -27,8 +27,14 @@ Various queries will be performed via a SPARQL endpoint (e.g knowledge sources l
 ### Activity Chart
 ![Activity Chart](/diagrams/activity-chart.png)
 
-### Class Diagram
+### Class Char
 ![Class Chart](/diagrams/class_diagram_urer.png)
 
-### Deployment Diagram
+### Deployment Char
 ![Deployment Diagram](/diagrams/deployment_diagram.png)
+
+### Usecase Char Register
+![Usecase Diagram](/diagrams/register_use_case_diagram.jpg)
+
+### Usecase Char Login
+![Usecase Diagram](/diagrams/login_use_case_diagram.jpg)
