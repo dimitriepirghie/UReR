@@ -19,3 +19,10 @@ friends/colleagues in the same shopping center, a module able to call cheap taxi
 tram routes based on previous experience with public transportation, etc. 
  
 Various queries will be performed via a SPARQL endpoint (e.g knowledge sources like DBpedia and/or Wikidata).
+
+## Diagrams
+### State Chart
+![State Chart](/diagrams/state-chart.png)
+
+### Activity Chart
+![Activity Chart](/diagrams/activity-chart.png)
