@@ -29,3 +29,6 @@ Various queries will be performed via a SPARQL endpoint (e.g knowledge sources l
 
 ### Class Diagram
 ![Class Chart](/diagrams/class_diagram_urer.png)
+
+### Deployment Diagram
+![Deployment Diagram](/diagrams/deployment_diagram.png)
