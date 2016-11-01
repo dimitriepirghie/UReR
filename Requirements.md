@@ -38,3 +38,6 @@ Various queries will be performed via a SPARQL endpoint (e.g knowledge sources l
 
 ### Usecase Char Login
 ![Usecase Diagram](/diagrams/login_use_case_diagram.jpg)
+
+### Package Char 
+![Package Diagram](/diagrams/package_diagram.png)
