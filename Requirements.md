@@ -26,3 +26,6 @@ Various queries will be performed via a SPARQL endpoint (e.g knowledge sources l
 
 ### Activity Chart
 ![Activity Chart](/diagrams/activity-chart.png)
+
+### Class Diagram
+![Class Chart](/diagrams/class_diagram_urer.png)
