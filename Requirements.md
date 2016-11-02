@@ -21,23 +21,23 @@ tram routes based on previous experience with public transportation, etc.
 Various queries will be performed via a SPARQL endpoint (e.g knowledge sources like DBpedia and/or Wikidata).
 
 ## Diagrams
-### State Chart
+### State Chart (Tofan Eduard)
 ![State Chart](/diagrams/state-chart.png)
 
-### Activity Chart
+### Activity Chart (Tofan Eduard)
 ![Activity Chart](/diagrams/activity-chart.png)
 
-### Class Char
+### Class Char (Pirghie Dimitrie, Vascan Dumitru)
 ![Class Chart](/diagrams/class_diagram_urer.png)
 
-### Deployment Char
+### Deployment Char (Pirghie Dimitrie, Vascan Dumitru)
 ![Deployment Diagram](/diagrams/deployment_diagram.png)
 
-### Usecase Char Register
+### Usecase Char Register (Acatrinei Paul)
 ![Usecase Diagram](/diagrams/register_use_case_diagram.jpg)
 
-### Usecase Char Login
+### Usecase Char Login (Acatrinei Paul)
 ![Usecase Diagram](/diagrams/login_use_case_diagram.jpg)
 
-### Package Char 
+### Package Char (Pirghie Dimitrie, Vascan Dumitru)
 ![Package Diagram](/diagrams/package_diagram.png)
