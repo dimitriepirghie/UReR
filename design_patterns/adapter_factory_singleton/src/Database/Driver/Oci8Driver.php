@@ -4,7 +4,6 @@ namespace Urer\Database\Driver;
 
 class Oci8Driver extends Driver implements DriverInterface
 {
-
     /**
      * Connect to the database.
      *

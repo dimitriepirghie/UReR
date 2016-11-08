@@ -4,7 +4,6 @@ namespace Urer\Response;
 
 class JsonResponse implements JsonInterface
 {
-
     /**
      * Read the json string.
      *

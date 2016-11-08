@@ -9,7 +9,7 @@ class DriverFactory
     /**
      * Create a driver based on the configuration.
      *
-     * @param  array   $config
+     * @param  array $config
      * @return Driver
      */
     public function make($config)

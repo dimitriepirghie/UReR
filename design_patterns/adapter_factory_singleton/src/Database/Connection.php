@@ -58,5 +58,4 @@ class Connection
      * @return void
      */
     private function __clone() {}
-
 }

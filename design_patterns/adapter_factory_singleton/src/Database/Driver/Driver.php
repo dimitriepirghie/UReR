@@ -8,10 +8,12 @@ abstract class Driver implements DriverInterface
      * @var array
      */
     private $credentials;
+
     /**
      * @var string
      */
     private $database;
+
     /**
      * @var string
      */
