@@ -1,0 +1,66 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="777" measuredH="436" mockupW="360" mockupH="378">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="417" y="58" w="360" h="378" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>14540253</color>
+        <text>UReR%20-%20Link%20social%20profiles%0Ahttp%3A//urer</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="437" y="140" w="-1" h="-1" measuredW="106" measuredH="45" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>UReR</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="440" y="185" w="-1" h="-1" measuredW="315" measuredH="23" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Universal%20Resource%20Recommender</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::VSplitter" x="417" y="208" w="360" h="-1" measuredW="100" measuredH="11" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::SubTitle" x="437" y="245" w="-1" h="-1" measuredW="187" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>2.%20Link%20social%20networks</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::PointyButton" x="437" y="368" w="119" h="-1" measuredW="54" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>left</direction>
+        <href>Setup%20profile%26bm%3BSetup%20profile.bmml%26bm%3BSetup%20profile.bmml%26bm%3BSetup%20profile.bmml</href>
+        <newLayout>true</newLayout>
+        <text>back</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::PointyButton" x="636" y="368" w="119" h="-1" measuredW="51" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>right</direction>
+        <href>Setup%20Profile%203%26bm%3BSetup%20Profile%203.bmml%26bm%3BSetup%20Profile%203.bmml%26bm%3BSetup%20Profile%203.bmml</href>
+        <newLayout>true</newLayout>
+        <text>next</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Icon" x="437" y="282" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>facebook%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Icon" x="508" y="282" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>twitter%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Icon" x="595" y="282" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>instagram%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Icon" x="686" y="282" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>linkedin%7Clarge</icon>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
