@@ -11,7 +11,7 @@ app.config['SWAGGER'] = {
             "title": "UReR's API",
             "endpoint": 'spec',
             "route": '/spec',
-            "rule_filter": lambda rule: True  # all in
+            "rule_filter": lambda rule: True
         }
     ],
     "static_url_path": "/apidocs",
@@ -31,6 +31,8 @@ def basic_action():
     responses:
       200:
         description: Recommendations
+      404:
+        description: There are no recommendations yet
 
     """
     data = {
@@ -57,7 +59,7 @@ def social_network(id):
         required: true
         description: The id of the social network (1 - Facebook ; 2 - Twitter ; 3 - Instagram ; 4 - Quora)
     responses:
-      500:
+      404:
         description: The id is unknown
       200:
         description: The social network
@@ -78,7 +80,7 @@ def social_network(id):
     }
 
     if id not in social_networks:
-        return "Invalid id", 500
+        return "Invalid id", 404
 
     return jsonify(social_network=social_networks[id])
 
@@ -102,8 +104,10 @@ def user_post_action(id, action):
         required: true
         description: The action to be taken (swipe, seen)
     responses:
-      500:
-        description: The action is unknown or the id is inexistent
+      400:
+        description: The action is unknown
+      404:
+        description: The id is inexistent
       200:
         description: A post
         schema:
@@ -121,10 +125,10 @@ def user_post_action(id, action):
     """
     action = action.lower().strip()
     if action not in ["swipe", "seen"]:
-        return "Invalid action for user", 500
+        return "Invalid action for user", 400
 
     if not 1 <= id <= 100:
-        return "The post id is inexistent", 500
+        return "The post id is inexistent", 404
 
     return jsonify(id=id, action=action)
 
@@ -148,7 +152,7 @@ def user_location():
           description: the longitude
           default: 18.1
     responses:
-      500:
+      400:
         description: The longitude or latitude are unknown
       200:
         description: The location
@@ -169,7 +173,7 @@ def user_location():
     latitude = float(request.args.get('lat', -1.0))
 
     if longitude == -1.0 or latitude == -1.0:
-        return "Invalid longitude or latitude", 500
+        return "Invalid longitude or latitude", 400
 
     return jsonify({"long": longitude, "lat": latitude, "status": "Location updated"})
 
@@ -188,7 +192,7 @@ def user_interest():
           description: the interest
           default: programming
     responses:
-      500:
+      400:
         description: The interest is unknown
       200:
         description: The interest
@@ -204,7 +208,7 @@ def user_interest():
     interest = str(request.args.get('interest', None))
 
     if interest is None:
-        return "Invalid interest", 500
+        return "Invalid interest", 400
 
     return jsonify({"interest": interest, "status": "Interest updated"})
 
@@ -223,7 +227,7 @@ def user_feed():
           description: the feed
           default: feedly.com
     responses:
-      500:
+      400:
         description: The feed is unknown
       200:
         description: The feed
@@ -239,7 +243,7 @@ def user_feed():
     feed = str(request.args.get('feed', None))
 
     if feed is None:
-        return "Invalid feed", 500
+        return "Invalid feed", 400
 
     return jsonify({"feed": feed, "status": "Interest updated"})
 
@@ -258,7 +262,7 @@ def user_follow_user(id):
         required: true
         description: The id of a user to follow
     responses:
-      500:
+      404:
         description: The id is unknown
       200:
         description: Follow
@@ -272,7 +276,7 @@ def user_follow_user(id):
 
     """
     if not 1 <= id <= 100:
-        return "The post id is inexistent", 500
+        return "The follower id is inexistent", 404
 
     return jsonify({"user": id, "status": "Following"})
 
@@ -291,7 +295,7 @@ def user_unfollow_user(id):
         required: true
         description: The id of a user to unfollow
     responses:
-      500:
+      404:
         description: The id is unknown
       200:
         description: Follow
@@ -305,7 +309,7 @@ def user_unfollow_user(id):
 
     """
     if not 1 <= id <= 100:
-        return "The post id is inexistent", 500
+        return "The follower id is inexistent", 404
 
     return jsonify({"user": id, "status": "Unfollowing"})
 
